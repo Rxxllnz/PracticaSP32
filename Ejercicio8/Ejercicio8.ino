@@ -6,8 +6,8 @@
 int counter = 0;
 
 // Define el pin touch para despertar
-const int TOUCH_PIN1 = 4; // Por ejemplo, GPIO 15
-const int TOUCH_PIN2 = 13; // Por ejemplo, GPIO 15
+const int TOUCH_PIN1 = 4; 
+const int TOUCH_PIN2 = 13; 
 #define THRESHOLD 5000
 
 void setup() {
@@ -30,6 +30,7 @@ void loop() {
 
 // Función que se ejecuta cuando la interrupción táctil se activa
 void touchInterrupt() {
+  delay(200);
   Serial.println("¡Se detectó un toque en el pin táctil!");
 }
 
